@@ -2,22 +2,22 @@ import { page } from "./page";
 
 export class PageObject {
     
-    // Navigate to the application
+    
     navigate() {
-        cy.visit('https://sandbox.mifos.community'); // Navigate to the application
+        cy.visit('https://sandbox.mifos.community'); 
     }
 
     // Login Methods
     fillUsername(username) {
-        cy.get('#mat-input-0').type(username); // Input username
+        cy.get('#mat-input-0').type(username); 
     }
 
     fillPassword(password) {
-        cy.get('#mat-input-1').type(password); // Input password
+        cy.get('#mat-input-1').type(password); 
     }
 
     submit() {
-        cy.get('.mat-raised-button').click(); // Click submit button
+        cy.get('.mat-raised-button').click(); 
     }
 
     acceptDialog() {
