@@ -34,12 +34,12 @@ export class PageObject {
     }
 
     selectClient() {
-        cy.get('.mat-row > .cdk-column-displayName').click();
+        cy.get(':nth-child(3) > .cdk-column-displayName').click();
         cy.wait(5000) // Select a client from the list
     }
 
     createLoanAccount() {
-        cy.get('.mat-row > .cdk-column-displayName').click()
+        cy.get(':nth-child(3) > .cdk-column-displayName').click();
         cy.get('.mat-card-title > div').click(); // Click on the loan account creation button
         cy.get('.mat-menu-trigger.ng-star-inserted').click(); // Click to open the menu
         cy.get('#mat-menu-panel-18 > .mat-menu-content > :nth-child(1)').click(); // Choose option from menu
